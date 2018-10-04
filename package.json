@@ -1,0 +1,19 @@
+{
+  "name": "Salesforce-Multi-Org-IDE",
+  "version": "0.3.0",
+  "description": "Salesforce Multi Org IDE by Salesforce Simplified",
+  "engines": {
+    "node": "8.9.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
