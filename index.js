@@ -1,4 +1,4 @@
-var http = require('http');
+/*var http = require('http');
 var fs = require('fs');
  
 // create a http server
@@ -20,4 +20,10 @@ http.createServer(function (req, res) {
                 return res.end();
         });
     } 
-}).listen(8085);
+}).listen(8085);*/
+
+var http = require('http');
+http.createServer(function(req, res) {
+  res.writeHead(301,{Location: '/index.html'});
+  res.end();
+}).listen(8080);
