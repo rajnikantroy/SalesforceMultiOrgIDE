@@ -1,19 +1,17 @@
 {
-  "name": "Salesforce-Multi-Org-IDE",
-  "version": "0.3.0",
-  "description": "Salesforce Multi Org IDE by Salesforce Simplified",
-  "engines": {
-    "node": "8.9.1"
+  "name": "express-html",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "^4.16.3",
+    "http": "^2.0.0"
   },
   "main": "index.js",
+  "devDependencies": {},
   "scripts": {
-    "start": "node index.js",
-    "test": "node test.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ],
-  "license": "MIT"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
