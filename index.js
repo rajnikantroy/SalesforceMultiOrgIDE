@@ -9,6 +9,14 @@ app.get('/index', function(req, res) {
 	logQueryParam(req, res);
     res.sendFile(path.join(__dirname + '/View/index.html'));
 });
+
+app.get('/#access_token', function(req, res) {
+	console.log('from access_token');
+	console.log('query:protocol - '+req.protocol);
+	logQueryParam(req, res);
+    res.sendFile(path.join(__dirname + '/View/index.html'));	
+});
+
 app.get('/', function(req, res) {
 	console.log('from root');
 	console.log('query:protocol - '+req.protocol);
