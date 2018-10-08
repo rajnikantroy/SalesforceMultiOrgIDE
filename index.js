@@ -12,14 +12,14 @@ app.get('/index', function(req, res) {
 
 app.get('/#access_token', function(req, res) {
 	console.log('from access_token');
-	console.log('query:protocol - '+req.protocol);
+	console.log('query:protocol - '+req.query.access_token);
 	logQueryParam(req, res);
     res.sendFile(path.join(__dirname + '/View/index.html'));	
 });
 
 app.get('/', function(req, res) {
 	console.log('from root');
-	console.log('query:protocol - '+req.protocol);
+	console.log('req.query.instance_url - '+req.query.instance_url);
 	logQueryParam(req, res);
     res.sendFile(path.join(__dirname + '/View/index.html'));	
 });
@@ -30,6 +30,5 @@ function logQueryParam(req, res){
 		console.log('req.query.access_token : '+req.query.access_token);
 	}
 }
-
 //app.listen(8080);
 app.listen(process.env.port || process.env.PORT || 8080);
