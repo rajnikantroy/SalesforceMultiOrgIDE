@@ -11,7 +11,7 @@ app.get('/index', function(req, res) {
 });
 app.get('/', function(req, res) {
 	console.log('from root');
-	console.log('query'+req.originalUrl);
+	console.log('query:protocol - '+req.protocol);
 	logQueryParam(req, res);
     res.sendFile(path.join(__dirname + '/View/index.html'));	
 });
