@@ -5,10 +5,12 @@ var path = require('path');
 
 // viewed at http://localhost:8080
 app.get('/index', function(req, res) {
+	console.log('from index');
     res.sendFile(path.join(__dirname + '/View/index.html'));
 	logQueryParam(req, res);
 });
 app.get('/', function(req, res) {
+	console.log('from root');
     res.sendFile(path.join(__dirname + '/View/index.html'));
 	logQueryParam(req, res);
 });
