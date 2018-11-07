@@ -2,8 +2,9 @@
   "name": "express-html",
   "version": "1.0.0",
   "dependencies": {
-    "express": "^4.16.3",
+    "express": "^4.16.4",
     "jsforce": "^1.9.1",
+    "node-salesforce": "^0.8.0",
     "querystring": "^0.2.0"
   },
   "scripts": {
